@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1130.4,1899.2</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1130.4,2032</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessTransaction_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="50">
@@ -99,9 +99,10 @@
       <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
       <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="608,1834.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="608,1967.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -110,7 +111,7 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:LogMessage DisplayName="Log Message Process Start" sap:VirtualizedContainerService.HintSize="545.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Started Process&quot;]" />
     <ui:Comment DisplayName="Comment (placeholder)" sap:VirtualizedContainerService.HintSize="545.6,56" sap2010:WorkflowViewState.IdRef="Comment_1" Text="//  Invoke steps of the process" />
-    <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="545.6,1417.6" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence sap2010:Annotation.AnnotationText="Invoke major steps of the business process, which are usually implemented by multiple subworkflows.&#xA;&#xA;If a BusinessRuleException is thrown, the transaction is skipped. &#xA;If another kind of exception occurs, the current transaction can be retried. " DisplayName="Process" sap:VirtualizedContainerService.HintSize="545.6,1550.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -170,6 +171,7 @@
           <uix:TargetApp Area="-9, -9, 1938, 1038" FilePath="C:\Program Files\BraveSoftware\Brave-Browser\Application\brave.exe" IconBase64="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" InformativeScreenshot="d7243109894072e141882794d1d625ed.png" Selector="&lt;html app='brave.exe' title='ACME System 1 - Log In' /&gt;" Title="New Tab" />
         </uix:NApplicationCard.TargetApp>
       </uix:NApplicationCard>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="483.2,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;demo&quot;]" />
     </Sequence>
   </Sequence>
 </Activity>
